@@ -1,0 +1,143 @@
+body {
+  background-color: gray;
+}
+
+// .products {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: green;
+//   margin: 0 auto;
+//   width: 80vw;
+// }
+
+.product {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+// .gallery {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 auto;
+//   width: 80vw;
+//   background-color: orange;
+// }
+
+.img {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  margin: 5px;
+}
+
+.service {
+  background-color: orangered;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+@mixin fix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 5px 15px;
+  width: 80vw;
+}
+
+@mixin dynemicfix($size, $difcolor) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 5px 15px;
+  width: $size;
+  background-color: $difcolor;
+}
+
+@mixin dynemicButton($buttonColor, $color) {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: $buttonColor;
+  border: 2px solid white;
+  color: $color;
+  padding: 5px;
+  min-width: 100px;
+  margin: 5px;
+}
+
+.products {
+  @include fix;
+  background-color: pink;
+}
+
+.gallery {
+  @include fix;
+  background-color: orange;
+}
+
+.services {
+  @include dynemicfix(90vw, steelbluedi);
+}
+
+.button-success {
+  @include dynemicButton(green, #fff);
+}
+
+.button-danger {
+  @include dynemicButton(red, white);
+}
+
+.button-warning {
+  @include dynemicButton(yellow, green);
+}
+
+.infomessage {
+  color: peru;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  text-decoration: underline;
+}
+
+.successful-message {
+  @extend .infomessage;
+  color: green;
+}
+
+.unsuccessful-message {
+  @extend .infomessage;
+  color: red;
+}
+
+.warning-message {
+  @extend .infomessage;
+}
+
+.box {
+  background-color: purple;
+  width: 5 * 10px;
+  height: 2 * 10px;
+  margin: 15px;
+}
+
+.navbar {
+  background-color: black;
+  width: 70vw;
+  padding: 5px 10px;
+  gap: 6px;
+  &-links {
+    display: flex;
+    gap: 20px;
+
+    & .navbar-link {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

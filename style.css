@@ -1,0 +1,127 @@
+body {
+  background-color: gray;
+}
+
+.product {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  margin: 5px;
+}
+
+.service {
+  background-color: orangered;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 5px 15px;
+  width: 80vw;
+  background-color: pink;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 5px 15px;
+  width: 80vw;
+  background-color: orange;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  padding: 5px 15px;
+  width: 90vw;
+  background-color: steelbluedi;
+}
+
+.button-success {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: green;
+  border: 2px solid white;
+  color: #fff;
+  padding: 5px;
+  min-width: 100px;
+  margin: 5px;
+}
+
+.button-danger {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: red;
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  min-width: 100px;
+  margin: 5px;
+}
+
+.button-warning {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: yellow;
+  border: 2px solid white;
+  color: green;
+  padding: 5px;
+  min-width: 100px;
+  margin: 5px;
+}
+
+.infomessage, .warning-message, .unsuccessful-message, .successful-message {
+  color: peru;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  text-decoration: underline;
+}
+
+.successful-message {
+  color: green;
+}
+
+.unsuccessful-message {
+  color: red;
+}
+
+.box {
+  background-color: purple;
+  width: 50px;
+  height: 20px;
+  margin: 15px;
+}
+
+.navbar {
+  background-color: black;
+  width: 70vw;
+  padding: 5px 10px;
+  gap: 6px;
+}
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+.navbar-links .navbar-link {
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
